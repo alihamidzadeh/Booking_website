@@ -1,0 +1,25 @@
+.text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+}
+.form{
+    border: solid darkcyan 5px;
+    border-radius: 15px ;
+}
+
+.header{
+    background-color: darkcyan;
+    cursor: pointer;
+}
+.collapse-text{
+    color: black;
+    font-weight: bold;
+}
+.collapse-text:hover{
+    color: blanchedalmond;
+}
+
+
+.carousel-inner img {
+    width: 98.9vw;
+    height: 90vh;
+}
