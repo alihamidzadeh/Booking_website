@@ -1,468 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <section>
-      <div class="">
-        <nav
-          class="navbar navbar-expand-lg navbar-light shadow-sm m-0"
-          style="background-color: darkcyan"
-        >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="../Main/index.html"
-                ><i class="fa-solid fa-city mr-2"></i>Home</a
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- <div class="container-fluid"> -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-home mr-2"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="../Flight/index.html"
+                ><i class="fa-solid fa-plane mr-2"></i><i class="bi bi-airplane"></i>Flight</a
               >
-              <a class="nav-item nav-link active" href="../Flight/index.html"
-                ><i class="fa-solid fa-plane mr-2"></i>Flight</a
-              >
-              <a class="nav-item nav-link active" href="../Train/index.html"
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="../Train/index.html"
                 ><i class="fa-solid fa-train mr-2"></i>Train</a
               >
-              <a class="nav-item nav-link active" href="../Hotel/index.html"
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="../Hotel/index.html"
                 ><i class="fa-solid fa-hotel mr-2"></i>Hotel and Suit</a
               >
-              <a
-                class="nav-item nav-link active scroll"
+          </li>
+          <li class="nav-item">
+            <a
+                class="nav-item nav-link scroll"
                 href="#"
                 data-target="footer"
                 ><i class="fa-solid fa-phone mr-2"></i>Contact us</a
               >
-            </div>
-          </div>
-          <div class="mr-2" id="google_translate_element"></div>
-          <a
-            id="tag"
-            href="../Login/index.html"
-            class="btn btn-outline-dark ml-auto"
-          >
-            Login
-          </a>
-        </nav>
+          </li>
+        </ul>
+        <a href="../Login/index.html">
+          <button class="btn btn-outline-success me-2"  type="button">Login</button>
+        </a>
+      </div>
+    </nav>
+  <!-- </div> -->
 
-        <!-- <div class="container">
-          <div class="row justify-content-center">
-            <p class="text-white text" style="font-size: 30px">
-              Enjoy your trip
-            </p>
-          </div>
-          <div class="row justify-content-center">
-            <p class="text-white text" style="font-size: 20px">
-              Suggested cities
-            </p>
-          </div>
-        </div> -->
-
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <div
-              id="demo"
-              class="carousel slide"
-              data-ride="carousel"
-            >
-              <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-                <li data-target="#demo" data-slide-to="3"></li>
-                <li data-target="#demo" data-slide-to="4"></li>
-                <li data-target="#demo" data-slide-to="5"></li>
-                <li data-target="#demo" data-slide-to="6"></li>
-              </ul>
-
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="../images/Vernazza_Italy.webp" alt="Vernazza" height="100vh"/>
-                  <div class="carousel-caption">
-                    <h3>Vernazza - Italy</h3>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/sydney_opera_house.webp" alt="sydney" />
-                  <div class="carousel-caption">
-                    <h3>Sydney - Australia</h3>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/Istanbul_Turkey2.webp" alt="istanbul" />
-                  <div class="carousel-caption">
-                    <h3>Istanbul - Turkey</h3>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/southafrica_capetown.webp" alt="cape-town" />
-                  <div class="carousel-caption">
-                    <h3>Cape Town - South Africa</h3>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/Kyoto_Japan.webp" alt="kyoto" />
-                  <div class="carousel-caption">
-                    <h3>Kyoto - Japan</h3>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/Kashan_Iran.webp" alt="kash" />
-                  <div class="carousel-caption">
-                    <h3>Kashan - Iran</h3>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/London_England.webp" alt="Londonn" />
-                  <div class="carousel-caption">
-                    <h3>London - England</h3>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Left and right controls -->
-              <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon bg-danger"></span>
-              </a>
-              <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon bg-danger"></span>
-              </a>
-            </div>
-          </div>
+  <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item">
+        <img src="../images/Vernazza_Italy.webp" class="d-block w-100 c-img" alt="Vernazza"/>
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Vernazza - Italy</h3>
         </div>
       </div>
-      <div class="container mt-5">
-        <h2>Your Questions</h2>
-        <div id="accordion">
-          <div class="card">
-            <div
-              class="d-flex card-header header"
-              data-toggle="collapse"
-              href="#collapseOne"
-            >
-              <a
-                class="card-link collapse-text"
-                data-toggle="collapse"
-                href="#collapseOne"
-              >
-                How many days before the flight should we buy the plane ticket?
-              </a>
-              <i class="fa-sharp fa-solid fa-angle-down ml-auto"></i>
-            </div>
-            <div id="collapseOne" class="collapse">
-              <div class="card-body">
-                It is possible to book plane tickets months in advance. But
+      <div class="carousel-item c-item">
+        <img src="../images/sydney_opera_house.webp" class="d-block w-100 c-img" alt="sydney" />
+        <div class="carousel-caption">
+          <h3>Sydney - Australia</h3>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="../images/Istanbul_Turkey2.webp" class="d-block w-100 c-img" alt="istanbul" />
+        <div class="carousel-caption">
+          <h3>Istanbul - Turkey</h3>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="../images/southafrica_capetown.webp" class="d-block w-100 c-img" alt="cape-town" />
+        <div class="carousel-caption">
+          <h3>Cape Town - South Africa</h3>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="../images/Kyoto_Japan.webp" class="d-block w-100 c-img" alt="kyoto" />
+        <div class="carousel-caption">
+          <h3>Kyoto - Japan</h3>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="../images/Kashan_Iran.webp" class="d-block w-100 c-img" alt="kashan" />
+        <div class="carousel-caption">
+          <h3>Kashan - Iran</h3>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="../images/London_England.webp" class="d-block w-100 c-img" alt="Londonn" />
+        <div class="carousel-caption">
+          <h3>London - England</h3>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>About us</h2>
+        <p>
+          Founded in 1996 in Amsterdam, Booking.com has grown from a small
+          Dutch start-up to one of the world’s leading digital travel
+          companies. Part of Booking Holdings Inc. (NASDAQ: BKNG),
+          Booking.com’s mission is to make it easier for everyone to
+          experience the world. By investing in technology that takes the
+          friction out of travel, Booking.com seamlessly connects millions
+          of travelers to memorable experiences, a variety of transportation
+          options, and incredible places to stay – from homes to hotels, and
+          much more. As one of the world’s largest travel marketplaces for
+          both established brands and entrepreneurs of all sizes,
+          Booking.com enables properties around the world to reach a global
+          audience and grow their businesses. Booking.com is available in 43
+          languages and offers more than 28 million reported accommodation
+          listings, including over 6.6 million homes, apartments, and other
+          unique places to stay. Wherever you want to go and whatever you
+          want to do, Booking.com makes it easy and supports you with 24/7
+          customer support.
+        </p>
+      </div>
+    </div>
+    <h2 class="mt-5">FAQ</h2>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            How many days before the flight should we buy the plane ticket?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            It is possible to book plane tickets months in advance. But
                 sometimes the price of plane tickets becomes cheaper in the days
                 close to the flight. Therefore, if your situation allows,
                 postpone the online booking of plane tickets to the days near
                 the flight. Of course, if you plan to travel during busy periods
                 such as holidays, you should book your plane tickets as soon as
                 possible.
-              </div>
-            </div>
           </div>
-
-          <div class="card">
-            <div
-              class="d-flex card-header header"
-              data-toggle="collapse"
-              href="#collapseTwo"
-            >
-              <a
-                class="collapsed card-link collapse-text"
-                data-toggle="collapse"
-                href="#collapseTwo"
-              >
-                What is the allowed amount of baggage per flight?
-              </a>
-              <i class="fa-sharp fa-solid fa-angle-down ml-auto"></i>
-            </div>
-            <div id="collapseTwo" class="collapse">
-              <div class="card-body">
-                The amount of baggage allowance depends on the flight class and
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            What is the allowed amount of baggage per flight?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            The amount of baggage allowance depends on the flight class and
                 the fare class of the ticket. When buying a plane ticket online,
                 you can see the amount of baggage allowance in the ticket
                 information. Of course, if you exceed the limit, you will have
                 to pay a fine.
-              </div>
-            </div>
           </div>
-
-          <div class="card">
-            <div
-              class="d-flex card-header header"
-              data-toggle="collapse"
-              href="#collapseThree"
-            >
-              <a
-                class="card-link collapse-text"
-                data-toggle="collapse"
-                href="#collapseThree"
-              >
-                When can rail tickets be booked in Tatkal?
-              </a>
-              <i class="fa-sharp fa-solid fa-angle-down ml-auto"></i>
-            </div>
-            <div id="collapseThree" class="collapse">
-              <div class="card-body">
-                Tatkal rail ticketing enables you to purchase train tickets at
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            When can rail tickets be booked in Tatkal?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Tatkal rail ticketing enables you to purchase train tickets at
                 the last minute. The Tatkal quota opens one day before the
                 departure date from the station where the train will depart.
                 Tatkal booking begins at 10 a.m. for air-conditioned (AC)
                 classes and 11 a.m. for non-air-conditioned (Non-AC) classes.
                 When booking Tatkal tickets, keep in mind that you must select
                 the Tatkal quota.
-              </div>
-            </div>
           </div>
-
-          <div class="card">
-            <div
-              class="d-flex card-header header"
-              data-toggle="collapse"
-              href="#collapseFour"
-            >
-              <a
-                class="collapsed card-link collapse-text"
-                data-toggle="collapse"
-                href="#collapseFour"
-              >
-                What is Premium Tatkal booking?
-              </a>
-              <i class="fa-sharp fa-solid fa-angle-down ml-auto"></i>
-            </div>
-            <div id="collapseFour" class="collapse">
-              <div class="card-body">
-                The Indian railways have introduced Premium Tatkal tickets,
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            What is Premium Tatkal booking?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            The Indian railways have introduced Premium Tatkal tickets,
                 which feature dynamic rates, for booking online train tickets.
                 It’s worth noting that ticket costs rise as the number of
                 reservations grows. Ticket prices are determined by the number
                 of seats available and the cost of reserving.
-              </div>
-            </div>
           </div>
-
-          <div class="card">
-            <div
-              class="d-flex card-header header"
-              data-toggle="collapse"
-              href="#collapseFive"
-            >
-              <a
-                class="collapsed card-link collapse-text"
-                data-toggle="collapse"
-                href="#collapseFive"
-              >
-                At what time is the check-in for the room?
-              </a>
-              <i class="fa-sharp fa-solid fa-angle-down ml-auto"></i>
-            </div>
-            <div id="collapseFive" class="collapse">
-              <div class="card-body">
-                Normally our rooms are available from 14:00 pm. For all our
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            At what time is the check-in for the room?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Normally our rooms are available from 14:00 pm. For all our
                 guest booking from this web site, we offer the possibility of an
                 early check-in (except when the room is still busy by the
                 previous guest due to other requests). We also offer the luggage
                 storage service in the hotel at the arrival.
-              </div>
-            </div>
           </div>
-
-          <div class="card">
-            <div
-              class="d-flex card-header header"
-              data-toggle="collapse"
-              href="#collapseSix"
-            >
-              <a
-                class="collapsed card-link collapse-text"
-                data-toggle="collapse"
-                href="#collapseSix"
-              >
-                At what time is the check-out for the room?
-              </a>
-              <i class="fa-sharp fa-solid fa-angle-down ml-auto"></i>
-            </div>
-            <div id="collapseSix" class="collapse">
-              <div class="card-body">
-                Check-out is at 12:00 pm. For all the guests booking directly
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            At what time is the check-out for the room?
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Check-out is at 12:00 pm. For all the guests booking directly
                 from our website, there is the possibility to postpone the
                 check-out at 11.00 am on request if it is possible for us as
                 well. We allow every guest to leave the luggage in our storage
                 for free, with no time restriction.
-              </div>
-            </div>
           </div>
         </div>
       </div>
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>About us</h2>
-            <p>
-              Founded in 1996 in Amsterdam, Booking.com has grown from a small
-              Dutch start-up to one of the world’s leading digital travel
-              companies. Part of Booking Holdings Inc. (NASDAQ: BKNG),
-              Booking.com’s mission is to make it easier for everyone to
-              experience the world. By investing in technology that takes the
-              friction out of travel, Booking.com seamlessly connects millions
-              of travelers to memorable experiences, a variety of transportation
-              options, and incredible places to stay – from homes to hotels, and
-              much more. As one of the world’s largest travel marketplaces for
-              both established brands and entrepreneurs of all sizes,
-              Booking.com enables properties around the world to reach a global
-              audience and grow their businesses. Booking.com is available in 43
-              languages and offers more than 28 million reported accommodation
-              listings, including over 6.6 million homes, apartments, and other
-              unique places to stay. Wherever you want to go and whatever you
-              want to do, Booking.com makes it easy and supports you with 24/7
-              customer support.
-            </p>
-          </div>
-        </div>
+    </div>
+  </div>
+  <footer class="container-fluid bg-dark" id="footer">
+    <div class="row justify-content-center px-3">
+      <div class="col-md-2 text-white mt-2">
+        <p>
+          <i class="fa-solid fa-phone mr-2"></i>+1 608-341-7433 <br />
+          <i class="fa-solid fa-envelope mr-2"></i>Booking@gamil.com <br />
+          <i class="fa-solid fa-map-location-dot mr-2"></i>United
+          States-California-Los Angeles-770 Zimmerman Lane
+        </p>
       </div>
-      <div class="container">
-        <h2>Latest News</h2>
-        <div class="row justify-content-center mt-3">
-          <div class="d-flex card bg-info col-md-3 m-4">
-            <p style="font-size: 20px">
-              <i
-                class="fa-regular fa-newspaper mr-2"
-                style="font-size: 40px"
-              ></i
-              >GET AWAY FOR MOTHER’S DAY WITH BOOKING.COM
-            </p>
-            <p style="font-size: 10px">02-Mar-2023</p>
-            <a
-              class="mt-auto btn btn-dark mb-2"
-              href="https://vergemagazine.co.uk/get-away-for-mothers-day-with-booking-com/"
-              target="_blank"
-              >Read more</a
-            >
-          </div>
-
-          <div class="d-flex card bg-info col-md-3 m-4">
-            <p style="font-size: 20px">
-              <i
-                class="fa-regular fa-newspaper mr-2"
-                style="font-size: 40px"
-              ></i
-              >What are YOU waiting for? Booking.com reveals top UK stays
-              inspired by latest season’s filming locations of your favourite
-              serial killer show
-            </p>
-            <p style="font-size: 10px">16-Feb-2023</p>
-            <a
-              class="mt-auto btn btn-dark mb-2"
-              href="https://opulencemag.co.uk/2023/02/14/top-uk-stays-inspired-by-you/"
-              target="_blank"
-              >Read more</a
-            >
-          </div>
-
-          <div class="d-flex card bg-info col-md-3 m-4">
-            <p style="font-size: 20px">
-              <i
-                class="fa-regular fa-newspaper mr-2"
-                style="font-size: 40px"
-              ></i
-              >Town wins title of friendliest place in the world
-            </p>
-            <p style="font-size: 10px">01-Feb-2023</p>
-            <a
-              class="mt-auto btn btn-dark mb-2"
-              href="https://metro.co.uk/2023/02/01/this-italian-town-has-been-named-the-friendliest-place-in-the-world-18202054/"
-              target="_blank"
-              >Read more</a
-            >
-          </div>
-        </div>
+      <div
+        class="col-md-8 mt-5 text-white text-center"
+        style="font-size: 10px"
+      >
+        <p>
+          YOUR TRIP (C) 2014 | PRIVACY POLICY | WEBSITE DESIGNED BY
+          Arash Gholamdokht
+        </p>
       </div>
-    </section>
-    <footer class="container-fluid bg-dark" id="footer">
-      <div class="row justify-content-center px-3">
-        <div class="col-md-2 text-white mt-2">
-          <p>
-            <i class="fa-solid fa-phone mr-2"></i>+1 608-341-7433 <br />
-            <i class="fa-solid fa-envelope mr-2"></i>Booking@gamil.com <br />
-            <i class="fa-solid fa-map-location-dot mr-2"></i>United
-            States-California-Los Angeles-770 Zimmerman Lane
-          </p>
-        </div>
-        <div
-          class="col-md-8 mt-5 text-white text-center"
-          style="font-size: 10px"
-        >
-          <p>
-            YOUR TRIP (C) 2014 | PRIVACY POLICY | WEBSITE DESIGNED BY
-            Arash Gholamdokht
-          </p>
-        </div>
-        <div class="col-md-2 d-flex">
-          <a href="https://twitter.com"
-            ><i
-              class="fa-brands fa-square-twitter text-primary mt-5"
-              style="font-size: 40px"
-            ></i
-          ></a>
-          <a href="https://instagram.com"
-            ><i
-              class="fa-brands fa-square-instagram text-primary mt-5 ml-2"
-              style="font-size: 40px"
-            ></i
-          ></a>
-          <a id="scroll-up-btn" class="ml-auto" style="cursor: pointer">
-            <i
-              class="fa-sharp fa-solid fa-circle-up text-info mt-5 ml-2"
-              style="font-size: 40px"
-            ></i>
-          </a>
-        </div>
+      <div class="col-md-2 d-flex">
+        <a href="https://twitter.com"
+          ><i
+            class="fa-brands fa-square-twitter text-primary mt-5"
+            style="font-size: 40px"
+          ></i
+        ></a>
+        <a href="https://instagram.com"
+          ><i
+            class="fa-brands fa-square-instagram text-primary mt-5 ml-2"
+            style="font-size: 40px"
+          ></i
+        ></a>
+        <a id="scroll-up-btn" class="ml-auto" style="cursor: pointer">
+          <i
+            class="fa-sharp fa-solid fa-circle-up text-info mt-5 ml-2"
+            style="font-size: 40px"
+          ></i>
+        </a>
       </div>
-    </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script
+    </div>
+  </footer>
+  <script
       src="https://kit.fontawesome.com/8682bf8566.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
