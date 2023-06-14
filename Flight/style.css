@@ -1,8 +1,5 @@
-.simple {
-  background-image: url(../images/airplane.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
+i {
+  padding-right: 5px;
 }
 
 input[type="text"],
@@ -20,9 +17,23 @@ input[type="text"] {
   font-family: Arial, sans-serif;
 }
 
-input:hover {
-  background-color: lightcyan;
+input {
+  background-color: rgba(209, 195, 195, 0.2);
 }
+
+input:hover {
+  background-color: rgba(209, 195, 195, 0.6);
+}
+
+.simple {
+  background-image: url(../images/airplane.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(80%);
+  background-attachment: fixed;
+  height: 100vh;
+}
+
 .text {
   background-color: white;
   color: black;
@@ -35,23 +46,13 @@ input:hover {
   border-radius: 5px;
 }
 
-i {
-  padding-right: 5px;
+.form-bg { 
+  margin-top: 6vh;
 }
 
-@media screen and (max-width: 760px) {
-  label {
-    color: white;
-  }
-}
 @media screen and (max-width: 760px) {
   .simple {
-    height: 120vh;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  .text {
-    display: none;
+    background-position: center;
+    height: 180vh;
   }
 }
