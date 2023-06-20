@@ -1,8 +1,8 @@
 .bg-img {
-    background-image: url(../images/profile.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: brightness(80%);
-    /* background-attachment: fixed; */
-    min-height: 100vh;
+  background-image: url(../images/profile.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(80%);
+  /* background-attachment: fixed; */
+  min-height: 100vh;
 }
