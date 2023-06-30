@@ -1,0 +1,65 @@
+i {
+  padding-right: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"] {
+  font-family: Arial, sans-serif;
+}
+
+input {
+  background-color: rgba(209, 195, 195, 0.2);
+}
+
+input:hover {
+  background-color: rgba(209, 195, 195, 0.6);
+}
+
+label {
+  color: azure;
+}
+
+.simple {
+  background-image: url(../images/Hotel.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(80%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.text {
+  background-color: white;
+  color: black;
+  font-size: 2vw;
+  font-weight: bold;
+  margin: 10% auto;
+  padding: 3px;
+  text-align: center;
+  mix-blend-mode: screen;
+  border-radius: 5px;
+}
+
+.label {
+  color: rgb(100, 120, 138);
+}
+
+.form-bg {
+  margin-top: 6vh;
+}
+
+@media screen and (max-width: 760px) {
+  .simple {
+    background-position: center;
+  }
+}
