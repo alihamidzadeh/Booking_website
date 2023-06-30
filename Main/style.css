@@ -1,21 +1,22 @@
 body {
-    background-color: #f3f2f2;
-}
-
-.text{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
-}
-
-.carousel-item img {
-    width: 100vw;
-    height: 90vh;
-    object-fit: cover;
+  background-color: #f3f2f2;
 }
 
 i {
-    padding-right: 5px;
+  padding-right: 5px;
+}
+
+.text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
+    "Arial Narrow", Arial, sans-serif;
+}
+
+.carousel-item img {
+  width: 100vw;
+  height: 92vh;
+  object-fit: cover;
 }
 
 .card {
-    border-radius: .7rem;
-  }
+  border-radius: 0.7rem;
+}

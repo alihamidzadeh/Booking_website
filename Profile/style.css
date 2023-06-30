@@ -1,3 +1,7 @@
+i {
+  padding-right: 5px;
+}
+
 .bg-img {
   background-image: url(../images/profile.webp);
   background-size: cover;

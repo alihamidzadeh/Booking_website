@@ -31,7 +31,7 @@ input:hover {
   background-repeat: no-repeat;
   filter: brightness(100%);
   background-attachment: fixed;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .text {
@@ -48,12 +48,10 @@ input:hover {
 
 .train-form {
   margin-top: 2vh;
-
 }
 
 @media screen and (max-width: 760px) {
   .simple {
     background-position: center;
-    height: 180vh;
   }
 }

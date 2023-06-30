@@ -1,418 +1,596 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- <div class="container-fluid"> -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeisureLinx</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
+      <a class="navbar-brand" href="#">
+        <img
+          src="../images/logo-light1.png"
+          alt="Logo"
+          width="30"
+          height="24"
+          class="d-inline-block align-text-top"
+        />
+        LeisureLinx
+      </a>
+
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-home mr-2"></i>Home</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-item nav-link" href="../Flight/index.html"
-                ><i class="fa-solid fa-plane mr-2"></i><i class="bi bi-airplane"></i>Flight</a
-              >
+              ><i class="fa-solid fa-plane mr-2"></i
+              ><i class="bi bi-airplane"></i>Flight</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-item nav-link" href="../Train/index.html"
-                ><i class="fa-solid fa-train mr-2"></i>Train</a
-              >
+              ><i class="fa-solid fa-train mr-2"></i>Train</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-item nav-link" href="../Hotel/index.html"
-                ><i class="fa-solid fa-hotel mr-2"></i>Hotel and Suit</a
-              >
+              ><i class="fa-solid fa-hotel mr-2"></i>Hotel and Suit</a
+            >
           </li>
           <li class="nav-item">
-            <a
-                class="nav-item nav-link scroll"
-                href="#"
-                data-target="footer"
-                ><i class="fa-solid fa-phone mr-2"></i>Contact us</a
-              >
+            <a class="nav-item nav-link scroll" href="#" data-target="footer"
+              ><i class="fa-solid fa-phone mr-2"></i>Contact us</a
+            >
           </li>
         </ul>
         <a href="../Login/index.html">
-          <button class="btn btn-outline-success me-2"  type="button">Login</button>
+          <button class="btn btn-outline-success me-2" type="button">
+            Login
+          </button>
         </a>
       </div>
     </nav>
-  <!-- </div> -->
 
-  <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    <div
+      id="hero-carousel"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="6"
+          aria-label="Slide 7"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img
+            src="../images/Vernazza_Italy.webp"
+            class="d-block w-100 c-img"
+            alt="Vernazza"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Vernazza - Italy</h3>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="../images/sydney_opera_house.webp"
+            class="d-block w-100 c-img"
+            alt="sydney"
+          />
+          <div class="carousel-caption">
+            <h3>Sydney - Australia</h3>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="../images/Istanbul_Turkey2.webp"
+            class="d-block w-100 c-img"
+            alt="istanbul"
+          />
+          <div class="carousel-caption">
+            <h3>Istanbul - Turkey</h3>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="../images/southafrica_capetown.webp"
+            class="d-block w-100 c-img"
+            alt="cape-town"
+          />
+          <div class="carousel-caption">
+            <h3>Cape Town - South Africa</h3>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="../images/Kyoto_Japan.webp"
+            class="d-block w-100 c-img"
+            alt="kyoto"
+          />
+          <div class="carousel-caption">
+            <h3>Kyoto - Japan</h3>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="../images/Kashan_Iran.webp"
+            class="d-block w-100 c-img"
+            alt="kashan"
+          />
+          <div class="carousel-caption">
+            <h3>Kashan - Iran</h3>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="../images/London_England.webp"
+            class="d-block w-100 c-img"
+            alt="Londonn"
+          />
+          <div class="carousel-caption">
+            <h3>London - England</h3>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active c-item">
-        <img src="../images/Vernazza_Italy.webp" class="d-block w-100 c-img" alt="Vernazza"/>
-        <div class="carousel-caption d-none d-md-block">
-          <h3>Vernazza - Italy</h3>
-        </div>
-      </div>
-      <div class="carousel-item c-item">
-        <img src="../images/sydney_opera_house.webp" class="d-block w-100 c-img" alt="sydney" />
-        <div class="carousel-caption">
-          <h3>Sydney - Australia</h3>
-        </div>
-      </div>
-      <div class="carousel-item c-item">
-        <img src="../images/Istanbul_Turkey2.webp" class="d-block w-100 c-img" alt="istanbul" />
-        <div class="carousel-caption">
-          <h3>Istanbul - Turkey</h3>
-        </div>
-      </div>
-      <div class="carousel-item c-item">
-        <img src="../images/southafrica_capetown.webp" class="d-block w-100 c-img" alt="cape-town" />
-        <div class="carousel-caption">
-          <h3>Cape Town - South Africa</h3>
-        </div>
-      </div>
-      <div class="carousel-item c-item">
-        <img src="../images/Kyoto_Japan.webp" class="d-block w-100 c-img" alt="kyoto" />
-        <div class="carousel-caption">
-          <h3>Kyoto - Japan</h3>
-        </div>
-      </div>
-      <div class="carousel-item c-item">
-        <img src="../images/Kashan_Iran.webp" class="d-block w-100 c-img" alt="kashan" />
-        <div class="carousel-caption">
-          <h3>Kashan - Iran</h3>
-        </div>
-      </div>
-      <div class="carousel-item c-item">
-        <img src="../images/London_England.webp" class="d-block w-100 c-img" alt="Londonn" />
-        <div class="carousel-caption">
-          <h3>London - England</h3>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-      </div>
-    </div>
-  </div>
 
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-12">
-        <h2>About us</h2>
-        <p>
-          Founded in 1996 in Amsterdam, Booking.com has grown from a small
-          Dutch start-up to one of the world’s leading digital travel
-          companies. Part of Booking Holdings Inc. (NASDAQ: BKNG),
-          Booking.com’s mission is to make it easier for everyone to
-          experience the world. By investing in technology that takes the
-          friction out of travel, Booking.com seamlessly connects millions
-          of travelers to memorable experiences, a variety of transportation
-          options, and incredible places to stay – from homes to hotels, and
-          much more. As one of the world’s largest travel marketplaces for
-          both established brands and entrepreneurs of all sizes,
-          Booking.com enables properties around the world to reach a global
-          audience and grow their businesses. Booking.com is available in 43
-          languages and offers more than 28 million reported accommodation
-          listings, including over 6.6 million homes, apartments, and other
-          unique places to stay. Wherever you want to go and whatever you
-          want to do, Booking.com makes it easy and supports you with 24/7
-          customer support.
-        </p>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>About us</h2>
+          <p>
+            Founded in 1996 in Amsterdam, Booking.com has grown from a small
+            Dutch start-up to one of the world’s leading digital travel
+            companies. Part of Booking Holdings Inc. (NASDAQ: BKNG),
+            Booking.com’s mission is to make it easier for everyone to
+            experience the world. By investing in technology that takes the
+            friction out of travel, Booking.com seamlessly connects millions of
+            travelers to memorable experiences, a variety of transportation
+            options, and incredible places to stay – from homes to hotels, and
+            much more. As one of the world’s largest travel marketplaces for
+            both established brands and entrepreneurs of all sizes, Booking.com
+            enables properties around the world to reach a global audience and
+            grow their businesses. Booking.com is available in 43 languages and
+            offers more than 28 million reported accommodation listings,
+            including over 6.6 million homes, apartments, and other unique
+            places to stay. Wherever you want to go and whatever you want to do,
+            Booking.com makes it easy and supports you with 24/7 customer
+            support.
+          </p>
+        </div>
       </div>
-    </div>
-  <section>
-    <hr class="w-50 mx-auto m-5 text-secondary">
-    <h2 class="mt-5">FAQ</h2>
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            How many days before the flight should we buy the plane ticket?
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            It is possible to book plane tickets months in advance. But
+      <section>
+        <hr class="w-50 mx-auto m-5 text-secondary" />
+        <h2 class="mt-5">FAQ</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                How many days before the flight should we buy the plane ticket?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                It is possible to book plane tickets months in advance. But
                 sometimes the price of plane tickets becomes cheaper in the days
                 close to the flight. Therefore, if your situation allows,
                 postpone the online booking of plane tickets to the days near
                 the flight. Of course, if you plan to travel during busy periods
                 such as holidays, you should book your plane tickets as soon as
                 possible.
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            What is the allowed amount of baggage per flight?
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            The amount of baggage allowance depends on the flight class and
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                What is the allowed amount of baggage per flight?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                The amount of baggage allowance depends on the flight class and
                 the fare class of the ticket. When buying a plane ticket online,
                 you can see the amount of baggage allowance in the ticket
                 information. Of course, if you exceed the limit, you will have
                 to pay a fine.
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            When can rail tickets be booked in Tatkal?
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            Tatkal rail ticketing enables you to purchase train tickets at
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                When can rail tickets be booked in Tatkal?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Tatkal rail ticketing enables you to purchase train tickets at
                 the last minute. The Tatkal quota opens one day before the
                 departure date from the station where the train will depart.
                 Tatkal booking begins at 10 a.m. for air-conditioned (AC)
                 classes and 11 a.m. for non-air-conditioned (Non-AC) classes.
                 When booking Tatkal tickets, keep in mind that you must select
                 the Tatkal quota.
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            What is Premium Tatkal booking?
-          </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            The Indian railways have introduced Premium Tatkal tickets,
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                What is Premium Tatkal booking?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                The Indian railways have introduced Premium Tatkal tickets,
                 which feature dynamic rates, for booking online train tickets.
                 It’s worth noting that ticket costs rise as the number of
                 reservations grows. Ticket prices are determined by the number
                 of seats available and the cost of reserving.
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFive">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-            At what time is the check-in for the room?
-          </button>
-        </h2>
-        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            Normally our rooms are available from 14:00 pm. For all our
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                At what time is the check-in for the room?
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Normally our rooms are available from 14:00 pm. For all our
                 guest booking from this web site, we offer the possibility of an
                 early check-in (except when the room is still busy by the
                 previous guest due to other requests). We also offer the luggage
                 storage service in the hotel at the arrival.
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingSix">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-            At what time is the check-out for the room?
-          </button>
-        </h2>
-        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            Check-out is at 12:00 pm. For all the guests booking directly
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                At what time is the check-out for the room?
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingSix"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Check-out is at 12:00 pm. For all the guests booking directly
                 from our website, there is the possibility to postpone the
                 check-out at 11.00 am on request if it is possible for us as
                 well. We allow every guest to leave the luggage in our storage
                 for free, with no time restriction.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  <section style="color: #000; background-color: #f3f2f2;">
-    <div class="container py-5">
-      <div class="row d-flex justify-content-center">
-        <div class="col-md-10 col-xl-8 text-center">
-          <h3 class="mb-4">Read what our customers say</h3>
-          <!-- <p class="mb-4 pb-2 mb-md-5 pb-md-0">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
-            numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
-            quisquam eum porro a pariatur veniam.
-          </p> -->
-        </div>
-      </div>
-  
-      <div class="row text-center">
-        <div class="col-md-4 mb-4 mb-md-0">
-          <div class="card">
-            <div class="card-body py-4 mt-2">
-              <div class="d-flex justify-content-center mb-4">
-                <img src="../images/Sydney.webp"
-                  class="rounded-circle shadow-1-strong" width="100" height="100" />
               </div>
-              <h5 class="font-weight-bold">Sydney Sweeney</h5>
-              <!-- <h6 class="font-weight-bold my-3">Founder at ET Company</h6> -->
-              <ul class="list-unstyled d-flex justify-content-center">
-                <li>
-                  <i class="fas fa-star fa-sm text-info"></i>
-                </li>
-                <li>
-                  <i class="fas fa-star fa-sm text-info"></i>
-                </li>
-                <li>
-                  <i class="fas fa-star fa-sm text-info"></i>
-                </li>
-                <li>
-                  <i class="fas fa-star fa-sm text-info"></i>
-                </li>
-                <li>
-                  <i class="fas fa-star-half-alt fa-sm text-info"></i>
-                </li>
-              </ul>
-              <p class="mb-2">
-                <i class="fas fa-quote-left pe-2"></i>Autem, totam debitis suscipit saepe sapiente magnam officiis quaerat necessitatibus odio assumenda perferendis labore laboriosam. 
-              </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4 mb-md-0">
-          <div class="card">
-            <div class="card-body py-4 mt-2">
-              <div class="d-flex justify-content-center mb-4">
-                <img src="../images/Sadie.webp"
-                  class="rounded-circle shadow-1-strong" width="100" height="100" />
+      </section>
+      <section style="color: #000; background-color: #f3f2f2">
+        <div class="container py-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-10 col-xl-8 text-center">
+              <h3 class="mb-4">Read what our customers say</h3>
+            </div>
+          </div>
+
+          <div class="row text-center">
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="card">
+                <div class="card-body py-4 mt-2">
+                  <div class="d-flex justify-content-center mb-4">
+                    <img
+                      src="../images/Sydney.webp"
+                      class="rounded-circle shadow-1-strong"
+                      width="100"
+                      height="100"
+                    />
+                  </div>
+                  <h5 class="font-weight-bold">Sydney Sweeney</h5>
+                  <ul class="list-unstyled d-flex justify-content-center">
+                    <li>
+                      <i class="fas fa-star fa-sm text-info"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-info"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-info"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-info"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star-half-alt fa-sm text-info"></i>
+                    </li>
+                  </ul>
+                  <p class="mb-2">
+                    <i class="fas fa-quote-left pe-2"></i>Autem, totam debitis
+                    suscipit saepe sapiente magnam officiis quaerat
+                    necessitatibus odio assumenda perferendis labore laboriosam.
+                  </p>
+                </div>
               </div>
-              <h5 class="font-weight-bold">Sadie Sink</h5>
-              <!-- <h6 class="font-weight-bold my-3">Photographer at Studio LA</h6> -->
-              <ul class="list-unstyled d-flex justify-content-center">
-                <li>
-                  <i class="fas fa-star fa-sm text-info"></i>
-                </li>
-                <li>
-                  <i class="fas fa-star fa-sm text-info"></i>
-                </li>
-                <li>
-                  <i class="fas fa-star fa-sm text-info"></i>
-                </li>
-                <li>
-                  <i class="fas fa-star fa-sm text-info"></i>
-                </li>
-                <li>
-                  <i class="fas fa-star fa-sm text-info"></i>
-                </li>
-              </ul>
-              <p class="mb-2">
-                <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus magnam, quas libero excepturi officia perspiciatis distinctio dignissimos facere neque saepe!
-              </p>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="card">
+                <div class="card-body py-4 mt-2">
+                  <div class="d-flex justify-content-center mb-4">
+                    <img
+                      src="../images/Sadie.webp"
+                      class="rounded-circle shadow-1-strong"
+                      width="100"
+                      height="100"
+                    />
+                  </div>
+                  <h5 class="font-weight-bold">Sadie Sink</h5>
+                  <ul class="list-unstyled d-flex justify-content-center">
+                    <li>
+                      <i class="fas fa-star fa-sm text-info"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-info"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-info"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-info"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-info"></i>
+                    </li>
+                  </ul>
+                  <p class="mb-2">
+                    <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor, sit
+                    amet consectetur adipisicing elit. Voluptatibus magnam, quas
+                    libero excepturi officia perspiciatis distinctio dignissimos
+                    facere neque saepe!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-0">
+              <div class="card">
+                <div class="card-body py-4 mt-2">
+                  <div class="d-flex justify-content-center mb-4">
+                    <img
+                      src="../images/Ana.webp"
+                      class="rounded-circle shadow-1-strong"
+                      width="100"
+                      height="100"
+                    />
+                  </div>
+                  <h5 class="font-weight-bold">Ana de Armas</h5>
+                  <ul class="list-unstyled d-flex justify-content-center">
+                    <li>
+                      <i class="fas fa-star fa-sm text-info"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-info"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-info"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-info"></i>
+                    </li>
+                    <li>
+                      <i class="far fa-star fa-sm text-info"></i>
+                    </li>
+                  </ul>
+                  <p class="mb-2">
+                    <i class="fas fa-quote-left pe-2"></i>Cras sit amet nibh
+                    libero, in gravida nulla metus scelerisque ante sollicitudin
+                    commodo cras purus odio, vestibulum in tempus viverra
+                    turpis.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-0">
-          <div class="card">
-            <div class="card-body py-4 mt-2">
-              <div class="d-flex justify-content-center mb-4">
-                <img src="../images/Ana.webp"
-                  class="rounded-circle shadow-1-strong" width="100" height="100" />
-              </div>
-              <h5 class="font-weight-bold">Ana de Armas</h5>
-              <!-- <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6> -->
-              <ul class="list-unstyled d-flex justify-content-center">
-                <li>
-                  <i class="fas fa-star fa-sm text-info"></i>
-                </li>
-                <li>
-                  <i class="fas fa-star fa-sm text-info"></i>
-                </li>
-                <li>
-                  <i class="fas fa-star fa-sm text-info"></i>
-                </li>
-                <li>
-                  <i class="fas fa-star fa-sm text-info"></i>
-                </li>
-                <li>
-                  <i class="far fa-star fa-sm text-info"></i>
-                </li>
-              </ul>
-              <p class="mb-2">
-                <i class="fas fa-quote-left pe-2"></i>Cras sit amet nibh libero, in gravida
-                nulla metus scelerisque ante sollicitudin commodo cras purus odio,
-                vestibulum in tempus viverra turpis.
-              </p>
-            </div>
-          </div>
+      </section>
+    </div>
+    <footer class="container-fluid bg-dark" id="footer">
+      <div class="row justify-content-center px-3">
+        <div class="col-md-2 text-white mt-2">
+          <p>
+            <i class="fa-solid fa-phone mr-2"></i>+1 608-341-7433 <br />
+            <i class="fa-solid fa-envelope mr-2"></i>Booking@gamil.com
+            <br />
+            <i class="fa-solid fa-map-location-dot mr-2"></i>United
+            States-California-Los Angeles-770 Zimmerman Lane
+          </p>
+        </div>
+        <div
+          class="col-md-8 mt-5 text-white text-center"
+          style="font-size: 10px"
+        >
+          <p>
+            YOUR TRIP (C) 2014 | PRIVACY POLICY | WEBSITE DESIGNED BY Arash
+            Gholamdokht
+          </p>
+        </div>
+        <div class="col-md-2 d-flex">
+          <a href="https://twitter.com"
+            ><i
+              class="fa-brands fa-square-twitter text-primary mt-5"
+              style="font-size: 40px; margin: 5px"
+            ></i
+          ></a>
+          <a href="https://instagram.com"
+            ><i
+              class="fa-brands fa-square-instagram text-primary mt-5 ml-2"
+              style="font-size: 40px"
+            ></i
+          ></a>
         </div>
       </div>
-    </div>
-  </section>
-  <footer class="container-fluid bg-dark" id="footer">
-    <div class="row justify-content-center px-3">
-      <div class="col-md-2 text-white mt-2">
-        <p>
-          <i class="fa-solid fa-phone mr-2"></i>+1 608-341-7433 <br />
-          <i class="fa-solid fa-envelope mr-2"></i>Booking@gamil.com <br />
-          <i class="fa-solid fa-map-location-dot mr-2"></i>United
-          States-California-Los Angeles-770 Zimmerman Lane
-        </p>
-      </div>
-      <div
-        class="col-md-8 mt-5 text-white text-center"
-        style="font-size: 10px"
-      >
-        <p>
-          YOUR TRIP (C) 2014 | PRIVACY POLICY | WEBSITE DESIGNED BY
-          Arash Gholamdokht
-        </p>
-      </div>
-      <div class="col-md-2 d-flex">
-        <a href="https://twitter.com"
-          ><i
-            class="fa-brands fa-square-twitter text-primary mt-5"
-            style="font-size: 40px"
-          ></i
-        ></a>
-        <a href="https://instagram.com"
-          ><i
-            class="fa-brands fa-square-instagram text-primary mt-5 ml-2"
-            style="font-size: 40px"
-          ></i
-        ></a>
-        <a id="scroll-up-btn" class="ml-auto" style="cursor: pointer">
-          <i
-            class="fa-sharp fa-solid fa-circle-up text-info mt-5 ml-2"
-            style="font-size: 40px"
-          ></i>
-        </a>
-      </div>
-    </div>
-  </footer>
-  <script
+    </footer>
+    <script
       src="https://kit.fontawesome.com/8682bf8566.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
