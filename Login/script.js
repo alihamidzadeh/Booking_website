@@ -1,17 +1,20 @@
-const emailInput = document.getElementById("email");
-const passwordInput = document.getElementById("password");
+const error = document.getElementById("error");
+const loginForm = document.getElementById("login-form");
 
-form.addEventListener("submit", (e) => {
+function handleSubmit(e) {
   e.preventDefault();
 
-  const email = emailInput.value;
-  const password = passwordInput.value;
-});
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
 
-function showPassword() {
-  if (passwordInput.type === "password") {
-    passwordInput.type = "text";
-  } else {
-    passwordInput.type = "password";
+  if (!!password && !!email) {
+    if (email === "test@gmail.com" && password === "testPass") {
+      window.location.href = "../Main/index.html";
+    } else {
+      const toast = new bootstrap.Toast(error);
+      toast.show();
+    }
   }
 }
+
+loginForm.addEventListener("submit", handleSubmit);

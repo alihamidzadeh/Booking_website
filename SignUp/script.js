@@ -1,100 +1,31 @@
-const email = document.getElementById("email");
-const phone = document.getElementById("phone");
-const password = document.getElementById("password");
-const repeatPassword = document.getElementById("repeat-password");
-const passwordStrength = document.getElementById("password-strength");
-const submitButton = document.querySelector('button[type="submit"]');
-const form = document.getElementById("form");
+const signupForm = document.getElementById("signup-form");
+const error = document.getElementById("error");
 
-// Add event listeners to inputs to validate on change
-email.addEventListener("change", validateForm);
-phone.addEventListener("change", validateForm);
-password.addEventListener("change", validatePassword);
-repeatPassword.addEventListener("change", validatePassword);
-form.addEventListener("submit", validateForm);
+function handleSubmit(e) {
+  e.preventDefault();
 
-function validateForm() {
-  const isValidEmail = email.checkValidity();
-  const isValidPhone = phone.checkValidity();
-  submitButton.disabled = !(isValidEmail && isValidPhone);
-}
+  const password = document.getElementById("password").value;
+  const confirmPassword = document.getElementById("confirmPassword").value;
+  const email = document.getElementById("email").value;
+  const username = document.getElementById("username").value;
 
-function validatePassword() {
-  if (password.value !== repeatPassword.value) {
-    repeatPassword.setCustomValidity("Passwords do not match");
-  } else {
-    repeatPassword.setCustomValidity("");
-
-    const strength = calculatePasswordStrength(password.value);
+  if (!!password && !!confirmPassword && !!email && !!username) {
+    const passwordStrength = zxcvbn(password).score;
+    if (password === confirmPassword) {
+      if (passwordStrength >= 2) {
+        alert("success");
+      } else {
+        const toast = new bootstrap.Toast(error);
+        toast.show();
+      }
+    } else {
+      console.log("test2");
+      const errorBody = document.querySelector(".toast-body");
+      errorBody.innerText = "Confirm password doesn't match!";
+      const toast = new bootstrap.Toast(error);
+      toast.show();
+    }
   }
 }
-function calculatePasswordStrength(password) {
-  const weaknesses = {
-    length: password.length < 8,
-    lowercase: !/[a-z]/.test(password),
-    uppercase: !/[A-Z]/.test(password),
-    numeric: !/[0-9]/.test(password),
-    symbol: !/[!@#$%^&*()]/.test(password),
-  };
 
-  const totalWeaknesses = Object.values(weaknesses).filter(Boolean).length;
-
-  switch (totalWeaknesses) {
-    case 0:
-      setPasswordStrength("strong");
-      passwordStrength.style.backgroundColor = "green";
-      passwordStrength.style.color = "white";
-      break;
-    case 1:
-      setPasswordStrength("medium");
-      passwordStrength.style.backgroundColor = "yellow";
-      passwordStrength.style.color = "black";
-      break;
-    default:
-      setPasswordStrength("weak");
-      passwordStrength.style.backgroundColor = "red";
-      passwordStrength.style.color = "white";
-  }
-
-  return weaknesses;
-}
-
-function setPasswordStrength(strength) {
-  passwordStrength.className = "";
-  passwordStrength.classList.add(strength);
-  passwordStrength.textContent = `Password strength: ${strength}`;
-}
-
-password.addEventListener("input", () => {
-  if (password.value.length === 0) {
-    setPasswordStrength("");
-    return;
-  }
-
-  const weaknesses = calculatePasswordStrength(password.value);
-
-  if (weaknesses.length) {
-    const passwordStrengthText = Object.keys(weaknesses)
-      .filter((key) => weaknesses[key])
-      .map((key) => capitalize(key))
-      .join(", ");
-
-    password.setCustomValidity(
-      `Password is too weak. Weaknesses: ${passwordStrengthText}.`
-    );
-  } else {
-    password.setCustomValidity("");
-  }
-});
-
-function capitalize(str) {
-  return str.charAt(0).toUpperCase() + str.slice(1);
-}
-
-function showPassword() {
-  if (password.type === "password") {
-    password.type = "text";
-  } else {
-    password.type = "password";
-  }
-}
+signupForm.addEventListener("submit", handleSubmit);
