@@ -10,7 +10,7 @@ input[type="number"] {
   margin-bottom: 1rem;
   border-radius: 5px;
   border: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 input[type="text"] {
@@ -23,6 +23,10 @@ input {
 
 input:hover {
   background-color: rgba(209, 195, 195, 0.6);
+}
+
+label {
+  color: azure;
 }
 
 .simple {
