@@ -21,7 +21,30 @@ function handleSubmit(e) {
     const passwordStrength = zxcvbn(password).score;
     if (password === confirmPassword) {
       if (passwordStrength >= 2) {
-        alert("success");
+        const formData = {
+          password: password,
+          email: email,
+          phone: phone,
+        };
+        // Send the form data to the backend
+        fetch("backend-url", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (response.ok) {
+              // Successful login, redirect to the main page
+              window.location.href = "../Main/index.html";
+            }
+          })
+          .catch((error) => {
+            // Handle any errors that occurred during the request
+            console.error(error);
+          });
       } else {
         const toast = new bootstrap.Toast(error);
         toast.show();
