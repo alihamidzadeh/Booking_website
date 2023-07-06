@@ -12,6 +12,10 @@ function upload() {
   reader.readAsDataURL(input.files[0]);
 }
 
+document.getElementById('phone').addEventListener('input', function(e) {
+  this.value = this.value.replace(/[^0-9]/g, ''); // Remove non-numeric characters
+});
+
 // _______________________________
 //NAME INPUT
 

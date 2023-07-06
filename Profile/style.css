@@ -2,6 +2,10 @@ i {
   padding-right: 5px;
 }
 
+label {
+  color: azure;
+}
+
 .bg-img {
   background-image: url(../images/profile.webp);
   background-size: cover;
