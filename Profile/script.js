@@ -5,7 +5,7 @@ const email = document.getElementById("email").value;
 const address = document.getElementById("address").value;
 const phone = document.getElementById("phone").value;
 const birthdate = document.getElementById("birthdate").value;
-const saveChangesButton = document.getElementById("saveChanges").value;
+const saveChangesButton = document.getElementById("saveChanges");
 
 function upload() {
   var input = document.querySelector("input[type=file]");
@@ -28,6 +28,7 @@ function saveProfileEdit() {
   saveEl.className = "saved";
   document.getElementById("save-btn").innerHTML = "SAVED ✓";
 }
+
 
 saveChangesButton.addEventListener("click", () => {
   const payload = {
