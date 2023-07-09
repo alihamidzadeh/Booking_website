@@ -12,8 +12,8 @@ phoneNumberInput.addEventListener("input", function (event) {
 function handleSubmit(e) {
   e.preventDefault();
 
-  const firstName = document.getElementById("firstName").value;
-  const lastName = document.getElementById("lastName").value;
+  // const firstName = document.getElementById("firstName").value;
+  // const lastName = document.getElementById("lastName").value;
   const password = document.getElementById("password").value;
   const confirmPassword = document.getElementById("confirmPassword").value;
   const email = document.getElementById("email").value;
@@ -24,14 +24,13 @@ function handleSubmit(e) {
     if (password === confirmPassword) {
       if (passwordStrength >= 2) {
         const formData = {
-          firstName: firstName,
-          lastName: lastName,
+          
           password: password,
           email: email,
           phone: phone,
         };
         // Send the form data to the backend
-        fetch("backend-url", {
+        fetch("loacalhost:8000/signup/", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
